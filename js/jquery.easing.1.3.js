@@ -171,13 +171,13 @@ jQuery.extend( jQuery.easing,
 	}
 	
 	
-}	
+	
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
 
   // Change to your service ID, or keep using the default service
-  var service_id = "default_service";
+  var service_id = "yandex";
   var template_id = "template_wbGwzo7b";
 
   myform.find("button").text("Sending...");
