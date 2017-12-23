@@ -180,7 +180,7 @@ myform.submit(function(event){
 
   myform.find("button").text("Sending...");
   emailjs.sendForm(service_id,template_id,"myform")
-  	.then(function(){
+  	.then(function(){ 
     	alert("Sent!");
        myform.find("button").text("Send");
     }, function(err) {
@@ -189,7 +189,6 @@ myform.submit(function(event){
     });
   return false;
 });
-
 
 /*
  *
