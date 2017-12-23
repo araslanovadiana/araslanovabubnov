@@ -171,7 +171,7 @@ jQuery.extend( jQuery.easing,
 	}
 	
 	
-	
+}	
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
