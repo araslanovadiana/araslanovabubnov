@@ -171,15 +171,17 @@ jQuery.extend( jQuery.easing,
 	}
 	
 	
+	
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
 
-  var service_id = "yandex";
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
   var template_id = "template_wbGwzo7b";
 
   myform.find("button").text("Sending...");
-  emailjs.sendForm(yandex,template_wbGwzo7b,"myform")
+  emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
     	alert("Sent!");
        myform.find("button").text("Send");
@@ -188,7 +190,6 @@ myform.submit(function(event){
        myform.find("button").text("Send");
     });
   return false;
-});
 
 /*
  *
