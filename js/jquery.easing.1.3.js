@@ -170,7 +170,7 @@ jQuery.extend( jQuery.easing,
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 	
-	
+});	
 	
 var myform = $("form#myform");
 myform.submit(function(event){
@@ -190,6 +190,8 @@ myform.submit(function(event){
        myform.find("button").text("Send");
     });
   return false;
+	
+});	
 
 /*
  *
