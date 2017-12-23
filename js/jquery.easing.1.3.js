@@ -169,7 +169,7 @@ jQuery.extend( jQuery.easing,
 		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
-});
+	
 
 var myform = $("form#myform");
 myform.submit(function(event){
@@ -179,7 +179,7 @@ myform.submit(function(event){
   var template_id = "template_wbGwzo7b";
 
   myform.find("button").text("Sending...");
-  emailjs.sendForm(service_id,template_id,"myform")
+  emailjs.sendForm(yandex,template_wbGwzo7b,"myform")
   	.then(function(){ 
     	alert("Sent!");
        myform.find("button").text("Send");
